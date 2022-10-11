@@ -11,10 +11,8 @@ export default function Jobs(props) {
           <div className="w-full md:mt-2 md:h-[125px] flex flex-col justify-between">
             <div>
               <p className="text-gray-700 text-xs">{props.name}</p>
-              <div className="font-bold text-md mb-2 md:h-14">
-                {props.position.length > 57
-                  ? props.position.slice(0, 54) + "..."
-                  : props.position}
+              <div className="font-bold text-md mb-2 h-[3rem] line-clamp-2">
+                {props.position}
               </div>
             </div>
             <div className="flex">
